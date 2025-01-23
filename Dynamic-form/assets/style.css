@@ -1,0 +1,133 @@
+*{
+    padding:0px;
+    margin:0px;
+    font-family:poppins;
+}
+ @font-face {
+    font-family:poppins;
+    src: url(./Poppins-Regular.ttf);
+} 
+.heading{
+    display:flex;
+    justify-content:center;
+    margin:10px;
+}
+
+.form-div{
+    display:flex;
+    justify-content:center;
+
+}
+ input{
+    margin:5px 0px 20px 3px;
+    padding:10px;
+    height:10px;
+    width:150px;
+    border-radius:6px;
+    border:1px solid gray;
+    background-color:transparent;
+}
+.form-gender-inputs,.form-gender-female-inputs{
+height:15px;
+width:15px;
+vertical-align:middle;
+margin-right:5px;
+margin-top:15px;
+}
+
+.form-date-div{
+    display:flex;
+    border:1px solid gray;
+    border-radius:20px;
+    padding:20px 40px 20px 40px;
+    gap:80px;
+    background-color:ghostwhite;
+}
+label{
+font-size:16px;
+font-weight:500;
+color:black;
+margin-top:10px;
+}
+
+#submit-id{
+    background-color:blue;
+    color:white;
+    border:none;
+    display:none;
+    padding:5px 15px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:400px;
+    margin:10px 0px 0px 50px;
+   
+}
+.form-class-inputs{
+    height:32px;
+    width:165px;
+    border-radius:6px;
+    margin-bottom:20px;
+    background-color:transparent;
+}
+.form-text-inputs{
+    height:100px;
+    width:165px;
+    border-radius:6px;
+    margin-bottom:20px;
+    padding:10px;
+    resize:none;
+    background-color:transparent;
+}
+
+
+table {
+    width:95%;
+    border-collapse: collapse;
+}
+table thead td{
+    padding:10px 0px 10px 50px;
+    color:black;
+    border-collapse: collapse;
+}
+tr:first-Child{
+    background-color:wheat;
+}
+#usertable{
+    display:none;
+    margin-top:10px;
+    margin-bottom:10px;
+  
+    justify-content:center;
+    width:100%;
+}
+
+
+.table{
+    margin-top:10px;
+    margin-bottom:10px;
+    display:flex;
+    justify-content:center;
+    width:100%;
+    
+}
+
+.name-att,.textarea-p
+,.roll-att,.email-check,.dobcheck{
+    color:red;
+}
+.add-btn{
+    /* pointer-events: none;  */
+    display:none;
+    color:white;
+    border:none;
+    background-color:blue;
+    padding:5px 10px;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:400px;
+    margin:10px 0px 0px 50px;
+}
+
+#dynamic-div{
+    margin-top:10px;
+}

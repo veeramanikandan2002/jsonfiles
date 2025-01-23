@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students form</title>
+    <link rel="stylesheet" href="asset/style.css">
+</head>
+<body>
+    <h1 class="heading">Student Form</h1>
+    <div class="form-div">
+       
+  <form id="form-data"> 
+    <div class="form-date-div">
+    <div class="first-part">
+        <label >
+            Name:
+        </label><br>
+        <input type="text" placeholder="enter your name" id="form-name-inputs" oninput="userfun()">
+         <div id="name-att"></div>
+       
+        <label >
+        Roll:
+    </label><br>
+    <input type="text" placeholder="enter your roll" id="form-roll-inputs" oninput="rollfun()">
+    <div id="roll-att"></div>
+     
+        <label for="email">
+            Email:
+        </label><br>
+        <input  type="text" placeholder="enter your Email" id="form-email-inputs" oninput="emailfun()">
+        <div id="email-check"></div><br>
+    </div>
+
+
+        <div class="second-part">
+        <label for="DOB">
+            DOB: 
+        </label> <br>
+        <input type="date" placeholder="enter your Date of birth" id="form-dob-inputs" oninput="dobfunction()"  onchange="dobfun()">
+       <div id="dobcheck" ></div>
+        
+        <label for="Age">
+            Age: 
+        </label><br> <input type="text" placeholder="enter your age" id="form-age-inputs"  ><br>
+
+        <label for="Gender">Gender:<br>
+           
+            <input type="radio" id="form-gender-inputs" name="Gender" value="male" >male
+             <input type="radio" id="form-gender-female-inputs" name="Gender" value="female" >female
+             
+        </label><br>
+    </div>
+    <div class="third-part">
+        <lable>Class:
+            <br>
+        <select name="class" id="form-class-inputs" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+    </lable><br>
+        <label >TextArea:</label><br>
+        <textarea  id="form-text-inputs" placeholder="write morethen 10 words" oninput="textareafun()"></textarea><br>
+        <p id="textarea-p"></p>
+       
+        
+   
+        <button id="submit-id" >Submit</button>
+    </div>
+</div>
+   
+    </form>
+    </div>
+
+    <div class="table">
+        <table id="usertable">
+            <thead class="thead-trs">
+                <tr>
+                    <td>Name</td>
+                    <td>Roll</td>
+                    <td>Email</td>
+                    <td>DOB</td>
+                    <td>Age</td>
+                    <td>Gender</td>
+                    <td>Class</td>
+                    <td>Textarea</td>
+                </tr>
+            </thead>
+            <tbody>
+        
+            </tbody>
+        </table>
+    </div>
+
+    <script src="asset/form.js"></script>
+</body>
+</html>
